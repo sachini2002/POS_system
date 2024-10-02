@@ -1,0 +1,572 @@
+/* item css apply start */
+
+@media (max-width: 768px) {
+    /* Adjust the header and navigation */
+
+
+    /* Make the table scrollable horizontally */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* Stack elements vertically */
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .btn {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .button-update-clear-delete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* Adjust card padding and margins */
+        .card {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        /* Adjust input and button sizes */
+        .input-group .form-control {
+            width: 100%;
+        }
+
+        .btn {
+            font-size: 14px;
+        }
+
+        /* Adjust the table's text */
+        .table-custom {
+            font-size: 14px;
+        }
+
+        /* General text and element size adjustments */
+        h1,
+        h5 {
+            font-size: 20px;
+        }
+
+        label,
+        .form-label {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 425px) {
+        /* Adjust the header and navigation for small screens */
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 0;
+            margin-bottom: 8px;
+        }
+
+        /* Stack elements vertically */
+        .row {
+            flex-direction: column;
+        }
+
+        .col-6,
+        .col-lg-12 {
+            width: 100%;
+        }
+
+        /* Buttons should take full width */
+        .btn {
+            width: 50%;
+            margin-bottom: 8px;
+        }
+
+        /* Adjust the card padding and reduce spacing */
+        .card {
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        /* Adjust input fields and button sizes for small screens */
+        .input-group .form-control {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .btn {
+            font-size: 12px;
+        }
+
+        /* Table should be scrollable and font size reduced */
+        .table-custom {
+            font-size: 12px;
+        }
+
+        /* Responsive text sizes */
+        h1 {
+            font-size: 18px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        label,
+        .form-label {
+            font-size: 12px;
+        }
+
+        /* Smaller modal body padding */
+        .modal-body {
+            padding: 15px;
+        }
+
+        /* Adjust the table */
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        /* Reduce padding around buttons */
+        .btn {
+            padding: 6px 8px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    /* Adjust the header and navigation for smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 6px;
+    }
+
+    /* Stack elements vertically */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-6,
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    /* Buttons should take full width */
+    .btn {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    /* Adjust the card padding and reduce spacing */
+    .card {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Adjust input fields and button sizes */
+    .input-group .form-control {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    /* Table should be scrollable and font size reduced */
+    .table-custom {
+        font-size: 12px;
+    }
+
+    /* Responsive text sizes */
+    h1 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    label,
+    .form-label {
+        font-size: 12px;
+    }
+
+    /* Smaller modal body padding */
+    .modal-body {
+        padding: 10px;
+    }
+
+    /* Adjust the table */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* Reduce padding around buttons */
+    .btn {
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Adjust the header and navigation for smallest screens */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 4px;
+    }
+
+    /* Stack elements vertically */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-6,
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    /* Buttons should take full width */
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* Adjust the card padding and reduce spacing */
+    .card {
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Adjust input fields and button sizes */
+    .input-group .form-control {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    /* Table should be scrollable and font size reduced */
+    .table-custom {
+        font-size: 10px;
+    }
+
+    /* Responsive text sizes */
+    h1 {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    label,
+    .form-label {
+        font-size: 10px;
+    }
+
+    /* Smaller modal body padding */
+    .modal-body {
+        padding: 8px;
+    }
+
+    /* Adjust the table */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* Reduce padding around buttons */
+    .btn {
+        padding: 4px 6px;
+    }
+}
+
+/* item css apply end */
+
+/* customer css  */
+
+@media (max-width: 768px) {
+    .customer-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+    }
+
+    .customer-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .input-group .form-control {
+        font-size: 12px;
+    }
+}
+
+/* Styles for screens with width up to 375px (extra small smartphones) */
+@media (max-width: 375px) {
+    .navbar {
+        padding: 8px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 10px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .table-custom {
+        font-size: 10px;
+    }
+
+    .input-group .form-control {
+        font-size: 10px;
+    }
+}
+
+/* Styles for screens with width up to 320px (very small smartphones) */
+@media (max-width: 320px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        font-size: 8px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .table-custom {
+        font-size: 8px;
+    }
+
+    .input-group .form-control {
+        font-size: 8px;
+    }
+}
+
+
+/* General Styles */
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .table-custom {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 0.75rem;
+    }
+    .table-custom {
+        font-size: 8px;
+    }
+
+    .btn {
+        padding: 3px 5px;
+        font-size: 0.7rem;
+    }
+}

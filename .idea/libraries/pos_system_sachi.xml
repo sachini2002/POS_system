@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pos-system-sachi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pos-system-sachi.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
