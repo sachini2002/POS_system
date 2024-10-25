@@ -38,7 +38,7 @@
 <section id="home" class="container ">
     <div class="row ">
         <div class="col-12 col-lg-4 mb-3">
-            <a href="./customer.html " class="" style="text-decoration:none">
+            <a id="homecu" style="text-decoration:none">
                 <div class="card p-5 text-center justify-content-center align-items-center  shadow">
                     <ion-icon name="people-outline" class="icons fs-1 p-5"></ion-icon>
                     <h3>Customer</h3>
@@ -48,7 +48,7 @@
 
         </div>
         <div class="col-12 col-lg-4 mb-3">
-            <a href="./item.html " class="" style="text-decoration:none">
+            <a id="homeitem" class="" style="text-decoration:none">
                 <div class="card p-5 text-center justify-content-center align-items-center  shadow">
                     <ion-icon name="pricetags-outline" class="icons fs-1 p-5"></ion-icon>
                     <h3>Items</h3>
@@ -57,7 +57,7 @@
 
         </div>
         <div class="col-12 col-lg-4 mb-3">
-            <a href="./order.html " class="" style="text-decoration:none">
+            <a id="homeoeder" class="" style="text-decoration:none">
                 <div class="card p-5 text-center justify-content-center align-items-center shadow">
                     <ion-icon name="reorder-four-outline" class="icons fs-1 p-5"></ion-icon>
                     <h3>Orders</h3>
@@ -116,13 +116,7 @@
 
                         <div class="col-12 d-flex justify-content-lg-start align-items-center">
                             <div class="col-5 ">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Search by</option>
-                                    <option value="1">Id</option>
-                                    <option value="2">Name</option>
-                                    <option value="3">Address</option>
 
-                                </select>
                             </div>
                             <button type="button" class="btn btn-success m-2">Search</button>
                         </div>
@@ -625,6 +619,27 @@
         $("#home").hide();
     });
 
+
+    $("#homecu").on("click", function () {
+        $("#order").hide();
+        $("#customer").show();
+        $("#item").hide();
+        $("#home").hide();
+    });
+
+    $("#homeitem").on("click", function () {
+        $("#order").hide();
+        $("#customer").show();
+        $("#item").show();
+        $("#home").hide();
+    });
+
+    $("#homeoeder").on("click", function () {
+        $("#order").show();
+        $("#customer").show();
+        $("#item").hide();
+        $("#home").hide();
+    });
 
 </script>
 
