@@ -1,0 +1,54 @@
+.header {
+    margin-bottom: 100px;
+}
+.home-header{
+    margin-bottom: 100px;
+}
+.order_header{
+    margin-bottom: 70px;
+}
+
+.icons {
+
+    color: blue;
+    padding: 100px;
+    font-size: 35px;
+}
+.table-custom th {
+    background-color: #0099ff; /* Blue background */
+    color: white;
+    text-align: center;
+}
+.table-custom th,
+.table-custom td {
+    vertical-align: middle;
+    text-align: center;
+}
+.table-container {
+    background-color: #ccebff; /* Light blue background */
+    padding: 20px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 20px;
+    gap: 20px;
+}
+
+.card-grid-apply {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+
+/*login css*/
+.login-top-margin{
+    margin-top: 10px;
+}
+
+/*responsive size gap*/

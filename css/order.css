@@ -1,0 +1,98 @@
+/* General Styles */
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .table-custom {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .form-label,
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-label,
+    .form-control {
+        font-size: 0.75rem;
+    }
+    .table-custom {
+        font-size: 8px;
+    }
+
+    .btn {
+        padding: 3px 5px;
+        font-size: 0.7rem;
+    }
+}

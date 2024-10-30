@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body>
+
+<header id="header" class="header home-header">
+    <nav class="navbar navbar-expand-lg bg-warning  ">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">Sachi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                    <li class="nav-item ms-4">
+                        <a class="nav-link active text-dark" aria-current="page"  id="home_nav">Home</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link text-dark"  id="customer_nav">Customer</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link text-dark"  id="item_nav">Item</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link text-dark"  id="order_nav">Order</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link text-dark"  id="orderHistroy">Order History</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="container " id="homeDiv">
+    <div class="row ">
+        <div class="col-12 col-lg-4 mb-3">
+            <a  style="text-decoration: none;" id="homeCus">
+                <div
+                        class="card p-5 text-center justify-content-center align-items-center bg-light bg-gradient bg-opacity-50 shadow">
+                    <ion-icon name="people-outline" class="icons"></ion-icon>
+                    <h3>Customer</h3>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+
+            <a  style="text-decoration: none;" id="homeItem">
+                <div
+                        class="card p-5 text-center justify-content-center align-items-center bg-light bg-gradient bg-opacity-50 shadow">
+                    <ion-icon name="pricetags-outline" class="icons"></ion-icon>
+                    <h3>Items</h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+            <a  style="text-decoration: none;" id="homeOrder">
+                <div
+                        class="card p-5 text-center justify-content-center align-items-center bg-light bg-gradient bg-opacity-50 shadow">
+                    <ion-icon name="reorder-four-outline" class="icons"></ion-icon>
+                    <h3>Orders</h3>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Customer-->
+<div class="container" id="customerDiv">
+
+
+    <h1 class="mb-5 d-flex justify-content-center">Manage Customer</h1>
+    <div class="row d-flex justify-content-center ">
+        <div class="col-12 col-lg-12 mb-5">
+            <div class="card p-5 bg-warning-subtle bg-gradient bg-opacity-50 shadow">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="CustomerId" class="form-label">Customer Id</label>
+                        <input type="text" class="form-control" id="CustomerId" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="salary" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="salary" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="mobile" class="form-label">Mobile</label>
+                        <input type="tel" class="form-control" id="mobile" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-12 col-lg-12 mb-1">
+
+
+            <div class="card p-5 bg-warning-subtle bg-gradient bg-opacity-50 shadow">
+
+
+
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-custom">
+                        <thead>
+                        <tr>
+                            <th scope="col">C_ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                        </thead>
+                        <tbody id="CustomerTableBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pt-2 customer-btn">
+                    <button type="button" class="btn btn-success m-2" id="customerSaveButton">Save</button>
+                    <button type="button" class="btn btn-primary m-2" id="CustomerUpdateButton">Update</button>
+                    <button type="button" class="btn btn-danger m-2"  id="DeleteCustomer">Delete</button>
+                    <button type="button" class="btn btn-secondary" id="ClearCustomer">Clear</button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+<!--item-->
+<div class="container" id="itemDiv">
+    <h1 class="mb-4">Manage Items</h1>
+    <div class="row">
+
+        <div class="col-12 col-lg-12 mb-1">
+
+            <div class="card p-5 bg-warning-subtle shadow">
+
+                <div class="row">
+
+                    <div class="card mb-4 col-5 d-flex gap-5">
+
+                        <!-- card new  -->
+                        <div class="col-9 d-flex ">
+                            <div class="card-body col-3" >
+                                <div class="d-flex mb-3"> <!-- Added bottom margin for separation -->
+
+
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-lg-start align-items-center mb-3">
+                                    <!-- Added margin bottom for separation -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 button-update-clear-delete">
+
+                            <button id="UpdateItems" type="button" class="btn btn-primary m-2">Update</button>
+                            <button id="DeleteItem"  type="button" class="btn btn-danger m-2">Delete</button>
+                            <button id="ItemClear" type="button" class="btn btn-secondary m-2">Clear</button>
+                            <button id="AddNewItem"  type="button" class="btn btn-success m-2">New Item</button>
+
+
+                        </div>
+
+
+                        <!-- card end -->
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-6 mb-3  ">
+
+
+                        <div class="modal-body ">
+                            <div class="col-12 col-lg-12 mb-3   ">
+                                <div class="card p-5   bg-gradient bg-opacity-10 shadow bg-info ">
+                                    <div class="mb-3">
+                                        <label for="ItemId" class="form-label">Item Code:</label>
+                                        <input type="text" class="form-control" id="ItemId" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ItemName" class="form-label">Item Name:</label>
+                                        <input type="text" class="form-control" id="ItemName" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="price" class="form-label">Item Price:</label>
+                                        <input type="text" class="form-control" id="price" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Qty" class="form-label">Quantity:</label>
+                                        <input type="text" class="form-control" id="Qty" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-custom">
+                        <thead>
+                        <tr>
+                            <th scope="col">Item Code </th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody id="ItemTableBody">
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container my-4">
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+<!--order-->
+<section class="order-section" id="order_div">
+    <h1 style="padding-left: 30px;">Orders</h1>
+
+    <div class="grid">
+
+        <!-- card 01 -->
+
+        <div class="card border-info mb-3">
+            <div class="card-header">Invoice Details</div>
+            <div class="card-body card-grid-apply">
+                <div class="mb-3">
+                    <label for="orderid" class="form-label">Order Id:</label>
+                    <input type="text" class="form-control" id="orderid" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" class="form-control" id="date" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Customer:</label>
+                    <div class="input-group flex-grow-1">
+                        <!-- Use flex-grow to take available space -->
+                        <input id="customerSearchId" type="text" class="form-control"
+                               placeholder="Input customer id"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text search-span" id="basic-addon4">Search</span>
+                    </div>
+                    <button id="customerSearch" type="button" class="btn btn-primary mt-3 ">search</button>
+
+                </div>
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Customer Id:</label>
+                    <input type="text" class="form-control" id="CustomerId2" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="cuname" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Salary:</label>
+                    <input type="text" class="form-control" id="cusalary" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="cuaddress" placeholder="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- card 02 -->
+        <div class="card border-info mb-3">
+            <div class="card-header">Item Select</div>
+            <div class="card-body card-grid-apply">
+                <div class="mb-3">
+                    <label for="CustomerId" class="form-label">Item:</label>
+                    <div class="input-group flex-grow-1">
+                        <!-- Use flex-grow to take available space -->
+                        <input id="iteCode" type="text" class="form-control"
+                               placeholder="Input item code"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text search-span" id="basic-addon6">Search</span>
+                    </div>
+                    <button id="itemSearchOrder" type="button" class="btn btn-primary mt-3 ">search</button>
+                </div>
+                <div class="mb-3">
+                    <label for="iteCode" class="form-label">Item Code:</label>
+                    <input type="text" class="form-control" id="iteCode2" placeholder="">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Iname" class="form-label">Item Name:</label>
+                    <input type="text" class="form-control" id="Iname" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="Iprice" class="form-label">Item Price:</label>
+                    <input type="text" class="form-control" id="Iprice" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="qtyhand" class="form-label">Quantity Hand in :</label>
+                    <input type="text" class="form-control" id="qtyhand" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="odQu" class="form-label">Oder Quantity</label>
+                    <input type="text" class="form-control" id="odQu" placeholder="">
+                </div>
+                <button id="addItem" type="button" class="btn btn-warning">Add Item</button>
+                <button id="removecart" type="button" class="btn btn-danger">Remove cart</button>
+
+            </div>
+        </div>
+
+        <!-- car 03 -->
+        <div class="card border-info mb-3">
+
+            <div class="card-body card-grid-apply">
+                <h1 id="totalDisplay">Total:</h1>
+<!--                <h1 id="subtotal">Last Total: </h1>-->
+                <div class="mb-3">
+                    <label for="balancecal" class="form-label">Cash</label>
+                    <input type="text" class="form-control" id="cashGiven" placeholder="">
+                    <button id="balancecal" type="button" class="mt-3 btn btn-primary">calculate balance</button>
+                </div>
+<!--                <div class="mb-3">-->
+<!--                    <label for="discount" class="form-label">Discount</label>-->
+<!--                    <input type="number" class="form-control" id="discount" placeholder="">-->
+<!--                    <button id="disButton" type="button" class="mt-3 btn btn-success">add discount</button>-->
+<!--                </div>-->
+                <h1 id="lastBal">Balance : </h1>
+                <br>
+
+                <button id="purchase" type="button" class="btn btn-success">Purchase</button>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="col-12 col-lg-12 mb-3">
+                <div class="card p-5  bg-danger-subtle bg-gradient bg-opacity-50 shadow">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-custom">
+                            <thead>
+                            <tr>
+                                <th scope="col">Order id</th>
+                                <th scope="col">customer id</th>
+                                <th scope="col">item name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">sub total</th>
+                            </tr>
+                            </thead>
+                            <tbody id="cart">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="OrderHistoryPage">
+    <div class="container">
+        <h1 class="mt-5 mb-5 text-center" >View All Item</h1>
+        <div class="row justify-content-center align-items-center ">
+
+            <div class="col-12 col-lg-12 mb-1 mt-5 pt-5">
+
+
+                <div class="card p-5 bg-warning bg-gradient bg-opacity-50 shadow   ">
+
+
+
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-custom">
+                            <thead>
+                            <tr>
+                                <th scope="col">index</th>
+                                <th scope="col">Order id</th>
+                                <th scope="col">date</th>
+                                <th scope="col">Customer id </th>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Item Price</th>
+                                <th scope="col">Order Quantity</th>
+                                <th scope="col">total</th>
+                            </tr>
+                            </thead>
+                            <tbody id="OrderHistoryTable">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<script src="lib/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!--<script src="working/Customer.js"></script>-->
+<!--<script src="working/item.js"></script>-->
+<script type="module" src="./controller/CustomerController.js"></script>
+<script type="module" src="./controller/ItemController.js"></script>
+<script type="module" src="./controller/OrderController.js"></script>
+<script type="module" src="./controller/loginControl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+<!--using JavaScript spa-->
+
+<!--
+<script>
+document.getElementById('customerDiv').style.display = "none";
+document.getElementById('itemDiv').style.display = "none";
+document.getElementById("order_div").style.display = "none";
+document.getElementById("loginDiv").style.display = "none";
+
+
+document.getElementById("home_nav").addEventListener('click',function (){
+    document.getElementById("homeDiv").style.display = "block";
+    document.getElementById("customerDiv").style.display = "none";
+    document.getElementById("itemDiv").style.display = "none";
+    document.getElementById("order_div").style.display = "none";
+    document.getElementById("loginDiv").style.display = "none";
+});
+
+document.getElementById("customer_nav").addEventListener('click',function (){
+    document.getElementById("customerDiv").style.display = "block";
+    document.getElementById("itemDiv").style.display = "none";
+    document.getElementById("order_div").style.display = "none";
+    document.getElementById("homeDiv").style.display = "none";
+    document.getElementById("loginDiv").style.display = "none";
+})
+
+document.getElementById("item_nav").addEventListener('click',function (){
+    document.getElementById('itemDiv').style.display = "block";
+    document.getElementById("homeDiv").style.display = "none";
+    document.getElementById("customerDiv").style.display ="none";
+    document.getElementById("order_div").style.display = "none";
+    document.getElementById("loginDiv").style.display = "none";
+});
+
+
+document.getElementById("order_nav").addEventListener("click",function (){
+    document.getElementById('order_div').style.display = "block";
+    document.getElementById("customerDiv").style.display = "none";
+    document.getElementById("itemDiv").style.display = "none";
+    document.getElementById("homeDiv").style.display = "none";
+    document.getElementById("loginDiv").style.display = "none";
+});
+document.getElementById("sign-up-nav").addEventListener("click",function (){
+    document.getElementById('order_div').style.display = "none";
+    document.getElementById("customerDiv").style.display = "none";
+    document.getElementById("itemDiv").style.display = "none";
+    document.getElementById("homeDiv").style.display = "none";
+    document.getElementById("loginDiv").style.display = "block";
+});
+</script>
+-->
+
+
+<!--Using JQuery Part for spa -->
+
+<script>
+    $("#header").show();
+    $("#homeDiv").show();
+    $("#customerDiv").hide();
+    $("#itemDiv").hide();
+    $("#order_div").hide();
+    $("#customerAllTable").hide()
+    $("#ItemAllTable").hide()
+    $("#OrderHistoryPage").hide();
+
+
+    $("#home_nav").on("click" ,function (){
+        $("#homeDiv").show();
+        $("#customerDiv").hide();
+        $("#itemDiv").hide();
+        $("#order_div").hide();
+        $("#loginDiv").hide();
+        $("#customerAllTable").hide()
+        $("#ItemAllTable").hide()
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#customer_nav").on("click" ,function (){
+        $("#customerDiv").show();
+        $("#homeDiv").hide();
+        $("#itemDiv").hide();
+        $("#order_div").hide();
+        $("#loginDiv").hide();
+        $("#customerAllTable").hide()
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#item_nav").on("click",function (){
+        $("#itemDiv").show();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#loginDiv").hide();
+        $("#order_div").hide();
+        $("#customerAllTable").hide()
+        $("#ItemAllTable").hide()
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#order_nav").on("click",function (){
+        $("#order_div").show();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#loginDiv").hide();
+        $("#customerAllTable").hide();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+
+    });
+
+    $("#sign-up-nav").on("click",function (){
+        $("#loginDiv").show();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+    $("#homeCus").on("click",function (){
+        $("#loginDiv").hide();
+        $("#itemDiv").hide();
+        $("#customerDiv").show();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#homeItem").on("click",function (){
+        $("#loginDiv").hide();
+        $("#itemDiv").show();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#homeOrder").on("click",function (){
+        $("#loginDiv").hide();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").show();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#viewAllCustomerT").on('click',function (){
+        $("#customerAllTable").show();
+        $("#loginDiv").hide();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#ItemAllTable").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#ViewAllItem").on('click',function (){
+        $("#ItemAllTable").show()
+        $("#customerAllTable").hide();
+        $("#loginDiv").hide();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#OrderHistoryPage").hide();
+    });
+
+    $("#orderHistroy").on('click',function (){
+        $("#ItemAllTable").hide()
+        $("#customerAllTable").hide();
+        $("#loginDiv").hide();
+        $("#itemDiv").hide();
+        $("#customerDiv").hide();
+        $("#homeDiv").hide();
+        $("#order_div").hide();
+        $("#OrderHistoryPage").show();
+    });
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
